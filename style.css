@@ -44,13 +44,18 @@ img {
 button {
     font-size: 20px;
     font-weight: bold;
-    background-color: #596D48;
+    background-color: rgb(89, 109, 51, 1.0);
     border: none;
     border-radius: 10px;
     color: white;
     padding: 15px 60px;
     margin-top: 35px;
     margin-left: 47px;
+    box-shadow: 1px 2px 3px 2px rgb(137, 137, 137, 0.3);
+}
+
+button:active {
+    background-color: rgb(89, 109, 51, 0.8);
 }
 
 .letsDoThis {
@@ -62,7 +67,6 @@ button {
 
 /* "flex-direction: column" is how to put the text on top of the input boxes */
 input {
-    border-color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -71,12 +75,24 @@ input {
     margin-right: 75px;
     margin-bottom: 30px;
     margin-top: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
     border-width: 1px;
 }
 
 input:focus {
-    border-color: red;
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 2px 3px 2px rgb(137, 137, 137, 0.3);
+}
+
+#user_email:invalid, #phone_number:invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+#user_email:valid, #phone_number:valid {
+    outline: none;
+    border: 1px solid rgb(0, 164, 0);
 }
 
 .input_form {

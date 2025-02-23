@@ -28,37 +28,43 @@
             <div class="input_form">
                 <p class="letsDoThis">Let's do this!</p>
 
-                <form action="https://www.example.com" method="post">
+                <form action="index.html" method="post">
 
+                    <!-- First Name -->
                 <div class="input_child">
                     <div class="input_element">
                         <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name">
+                        <input type="text" id="first_name" name="first_name" required>
                     </div>
 
+                    <!-- Last Name -->
                     <div class="input_element">
                         <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name">
+                        <input type="text" id="last_name" name="last_name" required>
                     </div>
 
+                    <!-- Email -->
                     <div class="input_element">
                         <label for="user_email">Email</label>
-                        <input type="text" id="user_email" name="user_email">
+                        <input type="email" id="user_email" name="user_email" title="Enter a valid email" required>
                     </div>
                 
+                    <!-- Phone Number -->
                     <div class="input_element">
                         <label for="phone_number">Phone Number</label>
-                        <input type="number" id="phone_number" name="phone_number">
+                        <input type="tel" id="phone_number" name="phone_number" title="123-456-7890" required>
                     </div>
                 
+                    <!-- Password -->
                     <div class="input_element">
                         <label for="user_password">Password</label>
-                        <input type="password" id="user_password" name="user_password">
+                        <input type="password" id="user_password" name="user_password" required>
                     </div>
                 
+                    <!-- Confirm Password -->
                     <div class="input_element">
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" id="confirm_password" name="confirm_password">
+                        <input type="password" id="confirm_password" name="confirm_password" required>
                     </div>
                 </div>
             </div>
